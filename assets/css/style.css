@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.btn:hover {
+  background-color: #abaeaf;
+  color: #fff;
+}
+
 .top {
   background-color: rgb(11, 127, 222);
   width: 100%;
@@ -15,7 +27,6 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px 10px;
@@ -68,4 +79,66 @@ nav .last {
   font-weight: 100;
   height: 100%;
   padding: 30px;
+}
+
+.header {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 70vh;
+  margin-top: 0px;
+}
+.header-content {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: auto;
+  padding-top: 100px;
+}
+.header-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 90px;
+  margin-top: 100px;
+}
+.header-content-left p {
+  font-size: 50px;
+  line-height: 1.4;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.header-content-btn {
+  border-radius: 50px;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+.header-content-btn:hover {
+  background-color: #abaeaf;
+  color: #fff;
+}
+.header form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  background-color: green;
+  margin-top: 200px;
 }/*# sourceMappingURL=style.css.map */

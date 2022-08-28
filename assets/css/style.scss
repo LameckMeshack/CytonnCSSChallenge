@@ -12,13 +12,30 @@ $secondary-color: #000;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 @mixin a {
   text-decoration: none;
   color: $primary-color;
+}
+@mixin background-image($image) {
+  background-image: url($image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+//btn extend
+.btn {
+  background-color: #fff;
+  color: $secondary-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid $primary-color;
+  &:hover {
+    background-color: $primary-color-two;
+    color: $primary-color;
+  }
 }
 
 .top {
@@ -81,5 +98,64 @@ nav {
     font-weight: 100;
     height: 100%;
     padding: 30px;
+  }
+}
+
+.header {
+  @include background-image("../images/banner.jpg");
+  //make the image darken
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 70vh;
+  margin-top: 0px;
+  &-content {
+    @include row;
+    flex-direction: row;
+    padding: auto;
+    padding-top: 100px;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      padding-left: 90px;
+      margin-top: 100px;
+
+      p {
+        font-size: 50px;
+        line-height: 1.4;
+        font-weight: lighter;
+        color: $primary-color;
+        margin-bottom: 20px;
+      }
+    }
+    &-btn {
+      //button curved
+      border-radius: 50px;
+      padding: 20px 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 100;
+      background-color: #fff;
+      color: $secondary-color;
+      border: 1px solid $primary-color;
+      &:hover {
+        background-color: $primary-color-two;
+        color: $primary-color;
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    background-color: green;
+    margin-top: 200px;
   }
 }
