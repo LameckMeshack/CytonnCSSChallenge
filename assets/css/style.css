@@ -520,6 +520,68 @@ nav .last {
   padding: 0 15px;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
   flex-direction: column;
   color: white;
+}
+.started-container h1 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.started-container .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.started-container .list .list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 25px;
+  align-items: center;
+  margin: 0px 50px;
+}
+
+.listing {
+  background: linear-gradient(315deg, #121212 0%, #181819 100%);
+  padding-top: 50px;
+}
+.listing-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.listing-container .listing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  padding-right: 190px;
+}
+.listing-container .listing-item h1 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #3ca13a;
+}
+.listing-container .listing-item ul {
+  list-style: none;
+}
+.listing-container .listing-item ul li {
+  font-size: 15px;
+  font-weight: 100;
+  font-weight: 300;
+  padding: 8px 0px;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */
