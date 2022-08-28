@@ -136,9 +136,88 @@ nav .last {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  width: 420px;
+  height: 120%;
+  background-color: #fff;
+  margin-top: 195px;
+}
+.header form h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: darkorange;
+  padding: 10px;
+}
+.header form .form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 350px;
-  height: 100%;
-  background-color: green;
-  margin-top: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  flex-wrap: wrap;
+}
+.header form .form-group input {
+  width: 45%;
+  padding: 15px;
+  border: 1px solid lightgray;
+  margin: 5px;
+  outline: none;
+  font-size: smaller;
+  color: lightgray;
+}
+.header form .form-group input:focus {
+  border: 1px solid darkorange;
+}
+.header form .b {
+  margin-left: 19px;
+}
+.header form p {
+  font-weight: 600;
+  font-size: 13px;
+  color: #abaeaf;
+}
+.header form p span {
+  color: darkorange;
+}
+.header form hr {
+  width: 90%;
+  height: 2px;
+  background-color: darkorange;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.header form .more {
+  font-size: x-small;
+  padding: 10px 0px;
+}
+.header form .search-btn {
+  width: 40%;
+  padding: 15px;
+  border-radius: 3px;
+  margin: 8px 20px;
+  background-color: darkorange;
+  color: #fff;
+  font-size: x-small;
+  font-weight: 100;
+  letter-spacing: 3px;
+  border: 1px solid darkorange;
+}
+.header form .search-btn:hover {
+  background-color: #fff;
+  color: darkorange;
+}
+
+.design {
+  background-image: url("../images/design.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
 }/*# sourceMappingURL=style.css.map */
