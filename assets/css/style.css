@@ -264,7 +264,7 @@ nav .last {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 .price-content h1 {
   color: #fff;
@@ -275,15 +275,148 @@ nav .last {
 }
 .price-content p {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 100;
   text-align: center;
   line-height: 1.2;
   margin: 25px 250px;
 }
 .price-content form {
+  margin: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.price-content form > * {
+  margin: 0px 10px;
+}
+.price-content form .price label,
+.price-content form .location label {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+.price-content form .price select,
+.price-content form .location select {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.3;
+  font-size: 20px;
+  font-weight: 100;
+}
+.price-content form .search {
+  background-color: #fff;
+  padding: 10px;
+  align-self: flex-end;
+  width: 80px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
+  text-align: center;
+}
+.cards > :first-child {
+  background-image: url("../images/firstimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cards > :nth-child(2) {
+  background-image: url("../images/secondimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cards > :nth-child(3) {
+  background-color: #800020;
+}
+.cards > * {
+  padding: 100px 150px;
+}
+.cards > * h1 {
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.cards > * h3 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.cards > * h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  margin-top: 50px;
+}
+.cards > * h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blogs {
+  background-color: #fff;
+  padding: 100px 0px;
+}
+.blogs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+}
+.blogs .blog-card {
+  background: rgba(211, 211, 211, 0.194);
+}
+.blogs .blog-card-img img {
+  width: 100%;
+  height: 300px;
+}
+.blogs .blog-card-content {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.blogs .blog-card-content h3 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.blogs .blog-card-content .blog-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letus {
+  padding: 100px 0px;
+}
+.letus-content {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }/*# sourceMappingURL=style.css.map */
