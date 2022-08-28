@@ -420,11 +420,37 @@ nav {
 }
 //LETUS
 .letus {
+  @include background-image("../images/backyellow.jpeg");
   padding: 100px 0px;
   &-content {
     @include row;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    h1 {
+      font-size: 50px;
+      font-weight: 100;
+      color: $primary-color;
+      line-height: 60px;
+      font-size: 60px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      margin: 40px 0;
+    }
+    button {
+      background-color: #fff;
+      color: $secondary-color;
+      padding: 20px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border: 1px solid $primary-color;
+      &:hover {
+        background-color: $primary-color-two;
+        color: $primary-color;
+      }
+    }
   }
 }
+
+// ....contact us section.....
