@@ -560,13 +560,16 @@ nav .last {
   justify-content: center;
   align-items: flex-start;
 }
+.listing-container > :first-child {
+  margin-left: 0px;
+}
 .listing-container .listing-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   color: #fff;
-  padding-right: 190px;
+  padding-right: 180px;
 }
 .listing-container .listing-item h1 {
   font-size: 30px;
@@ -584,4 +587,82 @@ nav .last {
   font-weight: 300;
   padding: 8px 0px;
   letter-spacing: 1px;
+}
+.listing-container > :nth-child(3) {
+  margin-right: 0px;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  padding-right: 0px;
+}
+.listing-container > :nth-child(3) .right {
+  margin-left: 100px;
+}
+
+.terms {
+  background: linear-gradient(315deg, #121212 0%, #181819 100%);
+}
+.terms .terms-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.terms .terms-container .fhr {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+.terms .terms-container .terms-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+  margin: 15px 0px;
+  color: #fff;
+}
+.terms .terms-container .terms-items li {
+  font-size: 15px;
+  font-weight: 100;
+  font-weight: 300;
+  padding: 8px 0px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+}
+
+.bottom {
+  background-color: #000;
+  color: #414141;
+  padding: 20px;
+}
+.bottom-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom-container .socials {
+  margin-bottom: 10px;
+}
+.bottom-container .socials img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 25px;
+}
+.bottom-container p {
+  font-size: 20px;
+  font-weight: 100;
+  font-weight: 300;
+  padding: 8px 0px;
+  letter-spacing: 1px;
+  margin: 0 20px;
 }/*# sourceMappingURL=style.css.map */

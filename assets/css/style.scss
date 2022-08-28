@@ -554,16 +554,17 @@ nav {
     @include row;
     justify-content: center;
     align-items: flex-start;
+    > :first-child {
+      margin-left: 0px;
+    }
 
     .listing-item {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
       align-items: flex-start;
-      //   margin: 0px 50px;
       color: #fff;
-      padding-right: 190px;
+      padding-right: 180px;
       h1 {
         font-size: 30px;
         font-weight: 100;
@@ -582,6 +583,77 @@ nav {
           letter-spacing: 1px;
         }
       }
+    }
+    > :nth-child(3) {
+      margin-right: 0px;
+      display: flex;
+      align-self: center;
+
+      flex-direction: row;
+      padding-right: 0px;
+
+      .right {
+        // width: 40%;
+        margin-left: 100px;
+      }
+    }
+  }
+}
+
+.terms {
+  background: linear-gradient(315deg, #121212 0%, #181819 100%);
+  .terms-container {
+    @include row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .fhr {
+      border-bottom: 1px solid #fff;
+      width: 100%;
+    }
+    .terms-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 5px;
+      margin: 15px 0px;
+      color: #fff;
+      li {
+        font-size: 15px;
+        font-weight: 100;
+        font-weight: 300;
+        padding: 8px 0px;
+        letter-spacing: 1px;
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+.bottom {
+  background-color: #000;
+  color: #414141;
+  padding: 20px;
+  &-container {
+    @include row;
+    flex-direction: column;
+    .socials {
+      margin-bottom: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0px 25px;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 100;
+      font-weight: 300;
+      padding: 8px 0px;
+      letter-spacing: 1px;
+      margin: 0 20px;
     }
   }
 }
