@@ -1,6 +1,6 @@
 //variables
 $primary-color: #fff;
-$primary-color-two: #abaeaf;
+$primary-color-two: #7f4b4b;
 $secondary-color: #000;
 * {
   margin: 0;
@@ -102,7 +102,7 @@ nav {
 }
 
 .header {
-  @include background-image("../images/banner.jpg");
+  @include background-image("../images/banner2.jpeg");
   //make the image darken
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -235,4 +235,68 @@ nav {
 .design {
   @include background-image("../images/design.png");
   height: 500px;
+  padding: 50px 250px;
+  &-content {
+    h1 {
+      font-size: 50px;
+      font-weight: 100;
+      color: #121212;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 100;
+      color: #a9a9a9;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      letter-spacing: 1px;
+    }
+    .design-btn {
+      @extend .btn;
+      color: #a9a9a9;
+      border: 2px solid #a9a9a9;
+      border-radius: 50px;
+      padding: 20px 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      &:hover {
+        background-color: darkorange;
+        color: #fff;
+      }
+    }
+  }
+}
+// section price
+.price {
+  background-color: #004b49;
+  &-content {
+    @include row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    h1 {
+      color: #fff;
+      line-height: 45px;
+      font-size: 40px;
+      font-weight: 100;
+      text-align: center;
+    }
+    p {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 100;
+      text-align: center;
+      line-height: 1.2;
+      margin: 25px 250px;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
