@@ -413,6 +413,19 @@ nav .last {
   line-height: 1.2;
   margin: 25px 250px;
 }
+@media only screen and (max-width: 481px) {
+  .price-content {
+    padding: 30px 5px;
+  }
+  .price-content h1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .price-content p {
+    font-size: 13px;
+    margin: 20px 8px;
+  }
+}
 .price-content form {
   margin: 30px;
   display: flex;
@@ -420,14 +433,37 @@ nav .last {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 481px) {
+  .price-content form {
+    margin: 10px;
+  }
+}
 .price-content form > * {
   margin: 0px 10px;
+}
+@media only screen and (max-width: 481px) {
+  .price-content form {
+    flex-direction: column;
+    margin: 5px 10px;
+  }
+  .price-content form > * {
+    margin: 10px 0px;
+  }
 }
 .price-content form .price label,
 .price-content form .location label {
   color: #fff;
   font-size: 20px;
   font-weight: 100;
+}
+@media only screen and (max-width: 481px) {
+  .price-content form .price label,
+.price-content form .location label {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
 }
 .price-content form .price select,
 .price-content form .location select {
@@ -442,6 +478,13 @@ nav .last {
   font-size: 20px;
   font-weight: 100;
 }
+@media only screen and (max-width: 481px) {
+  .price-content form .price select,
+.price-content form .location select {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
 .price-content form .search {
   background-color: #fff;
   padding: 10px;
@@ -453,6 +496,12 @@ nav .last {
   align-items: center;
   border-radius: 3px;
 }
+@media only screen and (max-width: 481px) {
+  .price-content form .search {
+    width: 100%;
+    height: 35px;
+  }
+}
 
 .cards {
   width: 100%;
@@ -460,6 +509,11 @@ nav .last {
   grid-template-columns: repeat(3, 1fr);
   color: #fff;
   text-align: center;
+}
+@media only screen and (max-width: 481px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .cards > :first-child {
   background-image: url("../images/firstimage.jpg");
@@ -479,23 +533,46 @@ nav .last {
 .cards > * {
   padding: 100px 150px;
 }
+@media only screen and (max-width: 481px) {
+  .cards > * {
+    padding: 20px 10px;
+  }
+}
 .cards > * h1 {
   font-size: 25px;
   font-weight: 100;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 481px) {
+  .cards > * h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .cards > * h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   margin-bottom: 20px;
   font-weight: lighter;
 }
+@media only screen and (max-width: 481px) {
+  .cards > * h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 .cards > * h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   margin-bottom: 20px;
   font-weight: lighter;
   margin-top: 50px;
+}
+@media only screen and (max-width: 481px) {
+  .cards > * h2 {
+    font-size: 16px;
+    margin: 10px;
+  }
 }
 .cards > * h2 a {
   text-decoration: none;
@@ -506,12 +583,24 @@ nav .last {
   background-color: #fff;
   padding: 100px 0px;
 }
+@media only screen and (max-width: 481px) {
+  .blogs {
+    padding: 30px 0px;
+  }
+}
 .blogs-container {
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
+}
+@media only screen and (max-width: 481px) {
+  .blogs-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    grid-column-gap: 20px;
+  }
 }
 .blogs .blog-card {
   background: rgba(211, 211, 211, 0.194);
@@ -520,22 +609,42 @@ nav .last {
   width: 100%;
   height: 300px;
 }
+@media only screen and (max-width: 481px) {
+  .blogs .blog-card-img img {
+    height: 200px;
+  }
+}
 .blogs .blog-card-content {
   margin-top: 0px;
   display: flex;
   flex-direction: column;
   padding: 5px;
 }
+@media only screen and (max-width: 481px) {
+  .blogs .blog-card-content {
+    padding: 5px;
+  }
+}
 .blogs .blog-card-content h3 {
   font-size: 20px;
   font-weight: 100;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 481px) {
+  .blogs .blog-card-content h3 {
+    font-size: 14px;
+  }
 }
 .blogs .blog-card-content .blog-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 481px) {
+  .blogs .blog-card-content .blog-details {
+    justify-content: center;
+  }
 }
 
 .letus {
@@ -544,6 +653,11 @@ nav .last {
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 0px;
+}
+@media only screen and (max-width: 481px) {
+  .letus {
+    padding: 30px 0px;
+  }
 }
 .letus-content {
   display: flex;
@@ -556,6 +670,11 @@ nav .last {
   justify-content: center;
   align-items: start;
 }
+@media only screen and (max-width: 481px) {
+  .letus-content {
+    align-items: center;
+  }
+}
 .letus-content h1 {
   font-size: 50px;
   font-weight: 100;
@@ -565,6 +684,13 @@ nav .last {
   letter-spacing: 1px;
   margin-bottom: 20px;
   margin: 40px 0;
+}
+@media only screen and (max-width: 481px) {
+  .letus-content h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
 }
 .letus-content button {
   background-color: #fff;
@@ -578,6 +704,12 @@ nav .last {
 .letus-content button:hover {
   background-color: #7f4b4b;
   color: #fff;
+}
+@media only screen and (max-width: 481px) {
+  .letus-content button {
+    padding: 10px 10px;
+    font-size: 10px;
+  }
 }
 
 .contact {
@@ -593,6 +725,11 @@ nav .last {
   flex-direction: column;
   padding: 40px 100px;
 }
+@media only screen and (max-width: 481px) {
+  .contact-container {
+    padding: 20px 5px;
+  }
+}
 .contact-container h1 {
   font-weight: 100;
   color: black;
@@ -602,6 +739,12 @@ nav .last {
   margin-bottom: 10px;
   font-weight: 600;
 }
+@media only screen and (max-width: 481px) {
+  .contact-container h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .contact-container h3 {
   font-weight: 100;
   color: rgba(51, 49, 49, 0.519);
@@ -610,15 +753,35 @@ nav .last {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 481px) {
+  .contact-container h3 {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
 .contact-container form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 481px) {
+  .contact-container form {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
 .contact-container form > * {
   margin: 0px 20px;
   height: 60px;
+}
+@media only screen and (max-width: 481px) {
+  .contact-container form > * {
+    height: auto;
+    margin: 5px 10px;
+    width: 100%;
+  }
 }
 .contact-container form input {
   padding: 20px;
@@ -631,6 +794,13 @@ nav .last {
   font-size: 20px;
   font-weight: 100;
 }
+@media only screen and (max-width: 481px) {
+  .contact-container form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
 .contact-container form button {
   border: none;
   background-color: rgb(144, 216, 21);
@@ -640,6 +810,12 @@ nav .last {
   color: #fff;
   line-height: 20px;
   letter-spacing: 2px;
+}
+@media only screen and (max-width: 481px) {
+  .contact-container form button {
+    font-size: 13px;
+    padding: 10px 50px;
+  }
 }
 
 .started {
@@ -656,17 +832,35 @@ nav .last {
   flex-direction: column;
   color: white;
 }
+@media only screen and (max-width: 481px) {
+  .started-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .started-container h1 {
   font-size: 35px;
   font-weight: 100;
   margin-bottom: 30px;
   font-weight: 600;
 }
+@media only screen and (max-width: 481px) {
+  .started-container h1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+}
 .started-container .list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 481px) {
+  .started-container .list {
+    flex-direction: column;
+  }
 }
 .started-container .list .list-item {
   display: flex;
@@ -676,6 +870,12 @@ nav .last {
   font-size: 25px;
   align-items: center;
   margin: 0px 50px;
+}
+@media only screen and (max-width: 481px) {
+  .started-container .list .list-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
 
 .listing {
@@ -695,6 +895,12 @@ nav .last {
 .listing-container > :first-child {
   margin-left: 0px;
 }
+@media only screen and (max-width: 481px) {
+  .listing-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .listing-container .listing-item {
   display: flex;
   flex-direction: column;
@@ -703,12 +909,34 @@ nav .last {
   color: #fff;
   padding-right: 180px;
 }
+@media only screen and (max-width: 481px) {
+  .listing-container .listing-item {
+    padding: 10px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
 .listing-container .listing-item h1 {
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 15px;
   font-weight: 300;
   color: #3ca13a;
+}
+@media only screen and (max-width: 481px) {
+  .listing-container .listing-item h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+.listing-container .listing-item h1 h3 {
+  font-size: 10px;
+}
+@media only screen and (max-width: 481px) {
+  .listing-container .listing-item h1 h3 {
+    font-size: 10px;
+  }
 }
 .listing-container .listing-item ul {
   list-style: none;
@@ -719,6 +947,12 @@ nav .last {
   font-weight: 300;
   padding: 8px 0px;
   letter-spacing: 1px;
+}
+@media only screen and (max-width: 481px) {
+  .listing-container .listing-item ul li {
+    font-size: 12px;
+    padding: 4px 0px;
+  }
 }
 .listing-container > :nth-child(3) {
   margin-right: 0px;
@@ -756,8 +990,15 @@ nav .last {
   align-items: center;
   list-style: none;
   padding: 5px;
-  margin: 15px 0px;
+  margin: 10px 0px;
   color: #fff;
+}
+@media only screen and (max-width: 481px) {
+  .terms .terms-container .terms-items {
+    flex-direction: column;
+    margin: 10px;
+    padding: 3px;
+  }
 }
 .terms .terms-container .terms-items li {
   font-size: 15px;
@@ -766,6 +1007,12 @@ nav .last {
   padding: 8px 0px;
   letter-spacing: 1px;
   margin: 0 20px;
+}
+@media only screen and (max-width: 481px) {
+  .terms .terms-container .terms-items li {
+    font-size: 12px;
+    padding: 4px 0px;
+  }
 }
 
 .bottom {
@@ -789,6 +1036,13 @@ nav .last {
   width: 50px;
   height: 50px;
   margin: 0px 25px;
+}
+@media only screen and (max-width: 481px) {
+  .bottom-container .socials img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+  }
 }
 .bottom-container p {
   font-size: 20px;

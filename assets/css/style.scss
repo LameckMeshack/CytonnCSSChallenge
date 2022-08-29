@@ -400,6 +400,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
+
     h1 {
       color: #fff;
       line-height: 45px;
@@ -415,14 +416,35 @@ nav {
       line-height: 1.2;
       margin: 25px 250px;
     }
+    @include devices(mobile) {
+      padding: 30px 5px;
+      h1 {
+        font-size: 16px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 13px;
+        margin: 20px 8px;
+      }
+    }
     form {
       margin: 30px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      @include devices(mobile) {
+        margin: 10px;
+      }
       > * {
         margin: 0px 10px;
+      }
+      @include devices(mobile) {
+        flex-direction: column;
+        margin: 5px 10px;
+        > * {
+          margin: 10px 0px;
+        }
       }
       .price,
       .location {
@@ -430,6 +452,12 @@ nav {
           color: #fff;
           font-size: 20px;
           font-weight: 100;
+          @include devices(mobile) {
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+          }
         }
         select {
           padding: 10px;
@@ -443,6 +471,10 @@ nav {
           opacity: 0.3;
           font-size: 20px;
           font-weight: 100;
+          @include devices(mobile) {
+            font-size: 12px;
+            padding: 8px;
+          }
         }
       }
       //search icon
@@ -456,6 +488,10 @@ nav {
         justify-content: center;
         align-items: center;
         border-radius: 3px;
+        @include devices(mobile) {
+          width: 100%;
+          height: 35px;
+        }
       }
     }
   }
@@ -467,6 +503,9 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   color: #fff;
   text-align: center;
+  @include devices(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   > :first-child {
     @include background-image("../images/firstimage.jpg");
   }
@@ -478,23 +517,38 @@ nav {
   }
   > * {
     padding: 100px 150px;
+    @include devices(mobile) {
+      padding: 20px 10px;
+    }
     h1 {
       font-size: 25px;
       font-weight: 100;
       margin-bottom: 20px;
+      @include devices(mobile) {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
     }
     h3 {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 100;
       margin-bottom: 20px;
       font-weight: lighter;
+      @include devices(mobile) {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
     }
     h2 {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 100;
       margin-bottom: 20px;
       font-weight: lighter;
       margin-top: 50px;
+      @include devices(mobile) {
+        font-size: 16px;
+        margin: 10px;
+      }
       a {
         @include a;
       }
@@ -505,6 +559,9 @@ nav {
 .blogs {
   background-color: #fff;
   padding: 100px 0px;
+  @include devices(mobile) {
+    padding: 30px 0px;
+  }
   &-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -512,13 +569,22 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     // grid-gap: 40px;
     grid-column-gap: 40px;
+    @include devices(mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 5px;
+      grid-column-gap: 20px;
+    }
   }
+
   .blog-card {
     background: rgba(211, 211, 211, 0.194);
     &-img {
       img {
         width: 100%;
         height: 300px;
+        @include devices(mobile) {
+          height: 200px;
+        }
       }
     }
     &-content {
@@ -526,16 +592,25 @@ nav {
       display: flex;
       flex-direction: column;
       padding: 5px;
+      @include devices(mobile) {
+        padding: 5px;
+      }
       h3 {
         font-size: 20px;
         font-weight: 100;
         margin-bottom: 10px;
+        @include devices(mobile) {
+          font-size: 14px;
+        }
       }
       .blog-details {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include devices(mobile) {
+          justify-content: center;
+        }
       }
     }
   }
@@ -544,11 +619,18 @@ nav {
 .letus {
   @include background-image("../images/backyellow.jpeg");
   padding: 100px 0px;
+  @include devices(mobile) {
+    padding: 30px 0px;
+  }
+
   &-content {
     @include row;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    @include devices(mobile) {
+      align-items: center;
+    }
     h1 {
       font-size: 50px;
       font-weight: 100;
@@ -558,6 +640,11 @@ nav {
       letter-spacing: 1px;
       margin-bottom: 20px;
       margin: 40px 0;
+      @include devices(mobile) {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 0;
+      }
     }
     button {
       background-color: #fff;
@@ -571,6 +658,10 @@ nav {
         background-color: $primary-color-two;
         color: $primary-color;
       }
+      @include devices(mobile) {
+        padding: 10px 10px;
+        font-size: 10px;
+      }
     }
   }
 }
@@ -582,6 +673,9 @@ nav {
     @include row;
     flex-direction: column;
     padding: 40px 100px;
+    @include devices(mobile) {
+      padding: 20px 5px;
+    }
     h1 {
       font-weight: 100;
       color: black;
@@ -590,6 +684,10 @@ nav {
       letter-spacing: 1px;
       margin-bottom: 10px;
       font-weight: 600;
+      @include devices(mobile) {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
     h3 {
       font-weight: 100;
@@ -598,15 +696,29 @@ nav {
       font-size: 20px;
       letter-spacing: 1px;
       margin-bottom: 20px;
+      @include devices(mobile) {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+      }
     }
     form {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      @include devices(mobile) {
+        flex-direction: column;
+        padding: 10px;
+      }
       > * {
         margin: 0px 20px;
         height: 60px;
+        @include devices(mobile) {
+          height: auto;
+          margin: 5px 10px;
+          width: 100%;
+        }
       }
 
       input {
@@ -616,6 +728,11 @@ nav {
         outline: none;
         color: #fff;
         width: 500px;
+        @include devices(mobile) {
+          width: 100%;
+          padding: 10px;
+          font-size: 15px;
+        }
 
         //darken the background color
         background-color: #fff;
@@ -632,6 +749,10 @@ nav {
         color: #fff;
         line-height: 20px;
         letter-spacing: 2px;
+        @include devices(mobile) {
+          font-size: 13px;
+          padding: 10px 50px;
+        }
       }
     }
   }
@@ -644,17 +765,29 @@ nav {
     padding: 40px;
     flex-direction: column;
     color: white;
+    @include devices(mobile) {
+      flex-direction: column;
+      padding: 20px;
+    }
     h1 {
       font-size: 35px;
       font-weight: 100;
       margin-bottom: 30px;
       font-weight: 600;
+      @include devices(mobile) {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
     }
     .list {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      @include devices(mobile) {
+        flex-direction: column;
+      }
 
       .list-item {
         display: flex;
@@ -664,6 +797,10 @@ nav {
         font-size: 25px;
         align-items: center;
         margin: 0px 50px;
+        @include devices(mobile) {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -679,6 +816,10 @@ nav {
     > :first-child {
       margin-left: 0px;
     }
+    @include devices(mobile) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 
     .listing-item {
       display: flex;
@@ -687,12 +828,28 @@ nav {
       align-items: flex-start;
       color: #fff;
       padding-right: 180px;
+      @include devices(mobile) {
+        padding: 10px;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+      }
       h1 {
         font-size: 30px;
         font-weight: 100;
         margin-bottom: 15px;
         font-weight: 300;
         color: #3ca13a;
+        @include devices(mobile) {
+          font-size: 15px;
+          text-align: center;
+        }
+        h3 {
+          font-size: 10px;
+          @include devices(mobile) {
+            font-size: 10px;
+          }
+        }
       }
       ul {
         list-style: none;
@@ -703,6 +860,10 @@ nav {
           font-weight: 300;
           padding: 8px 0px;
           letter-spacing: 1px;
+          @include devices(mobile) {
+            font-size: 12px;
+            padding: 4px 0px;
+          }
         }
       }
     }
@@ -726,9 +887,11 @@ nav {
   background: linear-gradient(315deg, #121212 0%, #181819 100%);
   .terms-container {
     @include row;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     .fhr {
       border-bottom: 1px solid #fff;
       width: 100%;
@@ -740,8 +903,14 @@ nav {
       align-items: center;
       list-style: none;
       padding: 5px;
-      margin: 15px 0px;
+      margin: 10px 0px;
       color: #fff;
+      @include devices(mobile) {
+        flex-direction: column;
+        margin: 10px;
+        padding: 3px;
+      }
+
       li {
         font-size: 15px;
         font-weight: 100;
@@ -749,6 +918,10 @@ nav {
         padding: 8px 0px;
         letter-spacing: 1px;
         margin: 0 20px;
+        @include devices(mobile) {
+          font-size: 12px;
+          padding: 4px 0px;
+        }
       }
     }
   }
@@ -767,6 +940,11 @@ nav {
         width: 50px;
         height: 50px;
         margin: 0px 25px;
+        @include devices(mobile) {
+          width: 30px;
+          height: 30px;
+          margin: 0px 10px;
+        }
       }
     }
     p {
