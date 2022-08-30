@@ -93,6 +93,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(315deg, #121212 0%, #3a3a3b 100%);
+  width: 100%;
 
   padding-right: 0px;
   .logo {
@@ -105,7 +106,8 @@ nav {
   .nav-links {
     padding: 10px;
     @include devices(mobile) {
-      width: 80%;
+      width: 60%;
+      display: none;
     }
     ul {
       display: flex;
