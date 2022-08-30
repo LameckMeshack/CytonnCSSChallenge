@@ -71,12 +71,22 @@ nav .logo img {
 nav .nav-links {
   padding: 10px;
 }
+@media only screen and (max-width: 481px) {
+  nav .nav-links {
+    width: 80%;
+  }
+}
 nav .nav-links ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
   margin-left: 400px;
+}
+@media only screen and (max-width: 481px) {
+  nav .nav-links ul {
+    display: none;
+  }
 }
 nav .nav-links ul li {
   float: right;
@@ -96,6 +106,11 @@ nav .last {
   font-weight: 100;
   height: 100%;
   padding: 30px;
+}
+@media only screen and (max-width: 481px) {
+  nav .last {
+    display: none;
+  }
 }
 @media only screen and (max-width: 481px) {
   nav {
@@ -896,9 +911,18 @@ nav .last {
   margin-left: 0px;
 }
 @media only screen and (max-width: 481px) {
+  .listing-container > :first-child {
+    margin: auto;
+  }
+  .listing-container > :first-child h3 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 481px) {
   .listing-container {
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0px;
   }
 }
 .listing-container .listing-item {
